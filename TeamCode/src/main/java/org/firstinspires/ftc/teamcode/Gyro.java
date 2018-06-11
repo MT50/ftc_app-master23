@@ -15,6 +15,7 @@ import org.firstinspires.ftc.robotcore.external.navigation.AxesReference;
 /**
  * Created by Computer on 18/08/2017.
  */
+
 @TeleOp(name = "Gyro")
 public class Gyro extends OpMode {
     DcMotor RF;
@@ -36,8 +37,8 @@ public class Gyro extends OpMode {
 
     @Override
     public void loop() {
-        Inventory.
-        AngularVelocity rates = gyro.getAngularVelocity(AngleUnit.DEGREES);
+        //hey ho
+      //  AngularVelocity rates = gyro.getAngularVelocity(AngleUnit.DEGREES);
         double zAngle = gyro.getAngularOrientation(AxesReference.INTRINSIC, AxesOrder.ZYX, AngleUnit.DEGREES).firstAngle;
 double forward=gamepad1.left_stick_y;
         double right=gamepad1.left_stick_x;
